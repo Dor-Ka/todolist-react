@@ -1,6 +1,6 @@
 # To do list - react
 ## demo:
-[link to the page:](https://dorotakar.github.io/todo-list/)
+[link to the page:](https://dorotakar.github.io/todolist-react/)
 
 ![demo.img](https://github.com/DorotaKar/todo-list/blob/main/images/img-readme-2.png)
 

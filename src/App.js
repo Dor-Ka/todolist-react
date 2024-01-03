@@ -23,7 +23,7 @@ function App() {
 
   const toggleTaskDone = (id) => {
     setTasks(tasks => tasks.map(task => {
-      if (task.id == id) {
+      if (task.id === id) {
         return { ...task, done: !task.done };
       }
       return task;

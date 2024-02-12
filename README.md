@@ -2,7 +2,7 @@
 ## About:
 Link to the page => [todolist-react](https://dorotakar.github.io/todolist-react/)
 
-This project is a simple website created for practising basic **HTML**, **CSS**, **JavaScript** and **react** skills.
+This project is a simple website created for practicing basic **HTML**, **CSS**, **JavaScript**, and **react** skills.
 ## Technologies used:
 - BEM
 - ES6+ features

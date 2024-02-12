@@ -8,10 +8,7 @@ import Container from "./Container";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "zadanie nr 1", done: false },
-    { id: 2, content: "zadanie nr 2", done: true },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
@@ -22,12 +19,9 @@ function App() {
   };
 
   const toggleTaskDone = (id) => {
-    setTasks(tasks => tasks.map(task => {
-      if (task.id === id) {
-        return { ...task, done: !task.done };
-      }
-      return task;
-    }));
+    setTasks(tasks => tasks.map(task => (
+      task.id === id)?{ ...task, done: !task.done }:task
+    ));
   };
 
   const setAllDone = () => {

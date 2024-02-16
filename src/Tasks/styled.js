@@ -30,11 +30,11 @@ export const Button = styled.button`
         background: green;
         transition: 0.8s;
 
-        &&:hover {
+        &:hover {
             background: hsl(120, 100%, 30%);
         }
 
-        &&:active {
+        &:active {
             background: hsl(120, 100%, 35%);
         }
     `}
@@ -43,11 +43,11 @@ export const Button = styled.button`
         background: hsl(0, 100%, 40%);
         transition: 0.8s;
         
-        &&:hover {
+        &:hover {
             background: hsl(0, 100%, 50%);
         }
 
-        &&:active {
+        &:active {
             background: hsl(0, 100%, 70%);
         }
     `}

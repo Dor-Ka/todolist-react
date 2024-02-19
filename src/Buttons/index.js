@@ -1,8 +1,8 @@
-import { ButtonsSection, Button } from "./styled";
+import { WrapedSection, Button } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
     tasks.length > 0 && (
-        <ButtonsSection>
+        <WrapedSection>
             <Button onClick={toggleHideDone}>
                 {tasks.some(({ done }) => done) && hideDone ? "Pokaż" : "Ukryj"} ukończone
             </Button>
@@ -13,7 +13,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
             >
                 Ukończ wszystkie
             </Button>
-        </ButtonsSection>
+        </WrapedSection>
     )
 );
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonsSection = styled.div`
+export const WrapedSection = styled.div`
     display: flex;
     flex-wrap: wrap;
 `;
@@ -8,7 +8,7 @@ export const ButtonsSection = styled.div`
 export const Button = styled.button`
     border: none;
     background-color: transparent;
-    color: hsl(180, 100%, 25%);
+    color: ${({ theme }) => theme.color.teal};
     font-size: 18px;
     transition: 0.8s;
 
@@ -18,14 +18,14 @@ export const Button = styled.button`
     }
 
     &:hover {
-        color: hsl(180, 100%, 30%);
+        filter: brightness(115%);
     }
 
     &:active {
-        color: hsl(180, 100%, 35%);
+        filter: brightness(130%);
     }
 
     &:disabled {
-        color: hsl(0, 0%, 70%);
+        color: ${({ theme }) => theme.color.ghost};
     }
 `;

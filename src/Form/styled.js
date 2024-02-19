@@ -5,33 +5,34 @@ export const TasksForm = styled.form`
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         grid-template-columns: 1fr;
     }
 `;
 
 export const Input = styled.input`
     padding: 10px;
-    border: 1px solid #ddd
+    border: 1px solid ${({ theme }) => theme.color.silver};
+
 `;
 
 export const Button = styled.button`
     border: none;
     padding: 10px;
-    background-color: hsl(180, 100%, 25%);
+    background-color: ${({ theme }) => theme.color.teal};
     color: white;
     transition: 0.8s;
 
     &:hover {
-        background-color: hsl(180, 100%, 30%);
+        filter: brightness(115%);
         transform: scale(1.15);
 
-        @media (max-width: 767px) {
+        @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
             transform: scale(1.05);
         }
     }
 
     &:active {
-        background-color: hsl(180, 100%, 35%);
+        filter: brightness(130%);
     }
 `;

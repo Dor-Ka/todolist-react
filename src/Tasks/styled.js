@@ -10,7 +10,7 @@ export const Item = styled.li`
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid ${({ theme }) => theme.color.ghost};
     align-items: center;
     padding: 10px;
 
@@ -27,28 +27,28 @@ export const Button = styled.button`
     padding: 0px;
 
     ${({ taskDone }) => taskDone && css`
-        background: green;
+        background: ${({ theme }) => theme.color.green};
         transition: 0.8s;
 
         &:hover {
-            background: hsl(120, 100%, 30%);
-        }
+            filter: brightness(115%);
+       }
 
         &:active {
-            background: hsl(120, 100%, 35%);
+            filter: brightness(130%);
         }
     `}
 
     ${({ remove }) => remove && css`
-        background: hsl(0, 100%, 40%);
+        background: ${({ theme }) => theme.color.cardinal};
         transition: 0.8s;
         
         &:hover {
-            background: hsl(0, 100%, 50%);
+            filter: brightness(115%);
         }
 
         &:active {
-            background: hsl(0, 100%, 70%);
+            filter: brightness(130%);
         }
     `}
 `;

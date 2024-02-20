@@ -13,6 +13,7 @@ This project is a simple website created for practicing basic **HTML**, **CSS**,
 - react useState
 - react useEffect
 - localStorage
+- styled components
 
 ## demo:
 ![demo.img](https://github.com/DorotaKar/todo-list/blob/main/images/img-readme-2.png)

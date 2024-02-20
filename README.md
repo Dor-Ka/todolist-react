@@ -12,6 +12,7 @@ This project is a simple website created for practicing basic **HTML**, **CSS**,
 - react
 - react useState
 - react useEffect
+- react custom hooks
 - localStorage
 - styled-components
 

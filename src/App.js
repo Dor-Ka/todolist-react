@@ -1,10 +1,10 @@
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
-import Section from "./Section";
+import StyledSection from "./Section";
 import Header from "./Header";
-import Container from "./Container";
 import { useTasks } from "./useTasks";
+import { Container } from "./Container/styled";
 
 function App() {
   const { 
@@ -20,11 +20,11 @@ function App() {
   return (
     <Container>
       <Header title="Lista zadań" />
-      <Section
+      <StyledSection
         title="Dodaj nowe zadanie"
         body={<Form addNewTask={addNewTask} />}
       />
-      <Section
+      <StyledSection
         title="Lista zadań"
         body={
           <Tasks

@@ -1,7 +1,7 @@
 import { Page, Title, Header, Body } from "./styled";
 
 
-const Section = ({ title, body, extraHeaderContent }) => (
+const StyledSection = ({ title, body, extraHeaderContent }) => (
   <Page>
     <Header>
       <Title> {title}</Title>
@@ -14,4 +14,4 @@ const Section = ({ title, body, extraHeaderContent }) => (
   </Page>
 );
 
-export default Section;
+export default StyledSection;

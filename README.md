@@ -9,12 +9,17 @@ This project is a simple website created for practicing basic **HTML**, **CSS**,
 - grid
 - media queries
 - immutability array in JavaScript
-- react
-- react useState
-- react useEffect
-- react custom hooks
-- localStorage
-- styled-components
+- react:
+    - useState
+    - useEffect
+    - custom hooks
+    - styled-components
+- redux:
+    - slice
+    - provider
+    - useSelector
+    - useDispatch
+  
 
 ## demo:
 ![demo.img](https://github.com/DorotaKar/todo-list/blob/main/images/img-readme-2.png)

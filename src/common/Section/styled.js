@@ -24,7 +24,7 @@ export const Header = styled.header`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     grid-template-columns: 1fr;
-    padding: 10px;
+    padding: 5px;
   }
 `;
 
@@ -32,5 +32,5 @@ export const Body = styled.div`
   padding: 20px;
 
   @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-    padding: 10px;
+    padding: 5px;
 `;

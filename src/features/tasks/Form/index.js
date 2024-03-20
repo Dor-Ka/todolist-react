@@ -14,6 +14,9 @@ const Form = () => {
     event.preventDefault();
 
     const trimedNewTaskContent = newTaskContent.trim();
+    if (trimedNewTaskContent === "") {
+      return null;
+    };
 
     dispatach(
       addTask({

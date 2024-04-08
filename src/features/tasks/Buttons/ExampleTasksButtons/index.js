@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Button } from "../styled";
 import { fetchExampleTasks } from "../../taskSlice";
 

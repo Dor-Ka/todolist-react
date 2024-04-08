@@ -10,11 +10,11 @@ function Tasks() {
   return (
     <Container>
       <Header title="Lista zadań" />
-      <StyledSection 
-        title="Dodaj nowe zadanie" 
-        body={<Form />} 
+      <StyledSection
+        title="Dodaj nowe zadanie"
+        body={<Form />}
         extraHeaderContent={<ExampleTasksButtons />}
-        />
+      />
       <StyledSection
         title="Lista zadań"
         body={<TaskList />}

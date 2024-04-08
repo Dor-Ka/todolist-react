@@ -14,12 +14,11 @@ function* fetchExampleTasksHandler() {
 }
 
 function* saveTasksInLocalStorageHandler() {
-  const tasks = yield select(selectTasks);
+  const { tasks } = yield select(selectTasks);
   yield call(saveTasksInLocalStorage, tasks);
 } 
 
 export function* tasksSaga() {
-  console.log("saga jest podłączona");
   yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
   yield takeEvery("*", saveTasksInLocalStorageHandler);
 }

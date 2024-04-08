@@ -12,9 +12,9 @@ const Buttons = () => {
   const dispatch = useDispatch();
   return (
     <WrapedSection>
-      <Button onClick={() => dispatch(fetchExampleTasks())}>
+      {/* <Button onClick={() => dispatch(fetchExampleTasks())}>
         Pobierz przykładowe zadania
-      </Button>
+      </Button> */}
       {tasks.length > 0 && (
         <>
           <Button onClick={() => dispatch(toggleHideDone())}>

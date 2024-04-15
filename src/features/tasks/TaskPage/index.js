@@ -15,9 +15,11 @@ function TaskPage() {
       <StyledSection
         title={task ? task.content : "nie znaleziono zadania..."}
         body={
-          <>
-            <strong>Ukończono:</strong> {task.done ? "tak" : "Nie"}
-          </>
+          !!task && (
+            <>
+              <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
+            </>
+          )
         }
       />
     </Container>

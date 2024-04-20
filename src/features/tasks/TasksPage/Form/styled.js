@@ -10,12 +10,6 @@ export const TasksForm = styled.form`
     }
 `;
 
-export const Input = styled.input`
-    min-width:0;
-    padding: 10px;
-    border: 1px solid ${({ theme }) => theme.color.silver};
-`;
-
 export const Button = styled.button`
     border: none;
     padding: 10px;

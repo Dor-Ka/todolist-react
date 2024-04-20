@@ -53,6 +53,6 @@ export const selectIsEveryTaskDone = (state) =>
   selectTasks(state).every(({ done }) => done);
 
 export const getTaskById = (state, taskId) =>
-  selectTasks(state.tasks).find(({ id }) => id === taskId);
+  selectTasks(state).find(({ id }) => id === taskId);
 
 export default taskSlice.reducer;

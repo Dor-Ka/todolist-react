@@ -9,6 +9,7 @@ export const Page = styled.section`
 export const Title = styled.h2`
   margin: 0;
   font-size: 20px;
+  word-break: break-word;
 `;
 
 export const Header = styled.header`

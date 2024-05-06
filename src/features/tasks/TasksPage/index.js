@@ -5,6 +5,7 @@ import ExampleTasksButtons from "./Buttons/ExampleTasksButtons";
 import StyledSection from "../../../common/Section";
 import Header from "../../../common/Header";
 import { Container } from "../../../common/Container/styled";
+import Search from "./Search";
 
 function TasksPage() {
   return (
@@ -15,6 +16,9 @@ function TasksPage() {
         body={<Form />}
         extraHeaderContent={<ExampleTasksButtons />}
       />
+      <StyledSection 
+      title="Wyszukiwarka" 
+      body={<Search />} />
       <StyledSection
         title="Lista zadań"
         body={<TaskList />}

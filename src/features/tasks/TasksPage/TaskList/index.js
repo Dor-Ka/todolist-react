@@ -1,22 +1,19 @@
 import { useSelector, useDispatch } from "react-redux";
 import { List, Item, Button, Content } from "./styled";
-import { selectTasks, toggleTaskDone, removeTask } from "../../tasksSlice";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { selectTasksByQuery, toggleTaskDone, removeTask, selectTasks } from "../../tasksSlice";
+import { Link } from "react-router-dom/";
+import searchQueryParamsName from "../searchQueryParamsName";
+import { useQueryParameter } from "../queryParameters";
 
 const TaskList = () => {
-  const location = useLocation();
-  const query = (new URLSearchParams(location.search)).get(searchQueryParamsName);
-
-
-
+  const query = useQueryParameter(searchQueryParamsName);
   const tasks = useSelector(state => selectTasksByQuery(state, query));
-  const hideDone = useSelector(selectHideDone);
-
+  const hideDone = useSelector(selectTasks);
   const dispatch = useDispatch();
   
   return (
     <List>
-      {tasks.map((task) => (
+      {tasks.tasks.map((task) => (
         <Item key={task.id} hidden={task.done && hideDone}>
           <Button taskDone onClick={() => dispatch(toggleTaskDone(task.id))}>
             {task.done ? "✓" : ""}

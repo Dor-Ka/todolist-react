@@ -21,7 +21,7 @@ const TaskList = () => {
           <Content done={task.done}>
             <Link to={`/zadania/${task.id}`}>{task.content}</Link>
           </Content>
-          <Button remove onClick={() => dispatch(removeTask(task.id))}>
+          <Button remove onClick={() => dispatch( removeTask(task.id))}>
             🗑
           </Button>
         </Item>

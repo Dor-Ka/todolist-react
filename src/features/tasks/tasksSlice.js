@@ -65,14 +65,25 @@ export const getTaskById = (state, taskId) =>
   selectTasksState(state.tasks).find(({ id }) => id === taskId);
 
 export const selectTasksByQuery = (state, query) => {
-  const tasks = selectTasksState(state);
+  const tasksState = selectTasksState(state);
 
-  if(!query || query.trim() === "") {
+  if (!tasksState || !Array.isArray(tasksState.tasks)) {
+    console.error("tasksState jest niezdefiniowany lub tasks nie jest tablicą");
+    return [];
+  }
+
+  const tasks = tasksState.tasks;
+
+  if (!query || query.trim() === "") {
     return tasks;
   }
-  return tasks.filter(({ content }) => 
-    content.toUpperCase().includes(query.trim().toUpperCase()));
+
+  return tasks.filter(({ content }) =>
+    content.toUpperCase().includes(query.trim().toUpperCase())
+  );
 };
+
+
 
 
 export default tasksSlice.reducer;

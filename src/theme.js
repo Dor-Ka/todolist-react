@@ -1,6 +1,6 @@
 export const theme = {
     color: {
-        black: "#0000",
+        black: "#000",
         silver: "#ccc",
         ghost: "#c5c6d0",
         pearlRiver: "#d9dddc",

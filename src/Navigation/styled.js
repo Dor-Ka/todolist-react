@@ -23,6 +23,6 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     text-decoration: none;
     
     &.${activeClasName} {
-        fonth-weight: bold;
+        font-weight: bold;
     }
 `;

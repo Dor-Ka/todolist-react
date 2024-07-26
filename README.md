@@ -1,4 +1,3 @@
-Skopiuj kod
 # To Do List - React
 
 ## Demo

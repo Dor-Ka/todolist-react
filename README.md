@@ -1,11 +1,12 @@
 Skopiuj kod
 # To Do List - React
 
+## Demo
+[Link to the page](https://todolist-react)
+
 ## About
 
 This project is a simple website created for practicing basic HTML, CSS, JavaScript, and React skills.
-
-[Link to the page](https://todolist-react)
 
 ## Technologies Used
 

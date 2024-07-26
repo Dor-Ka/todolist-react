@@ -1,32 +1,47 @@
-# To do list - react
-## About:
-Link to the page => [todolist-react](https://dorotakar.github.io/todolist-react/)
+Skopiuj kod
+# To Do List - React
 
-This project is a simple website created for practicing basic **HTML**, **CSS**, **JavaScript**, and **react** skills.
-## Technologies used:
-- BEM
-- ES6+ features
-- grid
-- media queries
-- immutability array in JavaScript
-- react:
-    - useState
-    - useEffect
-    - custom hooks
-    - styled-components
-- redux:
-    - slice
-    - provider
-    - useSelector
-    - useDispatch
-  
+## About
+
+This project is a simple website created for practicing basic HTML, CSS, JavaScript, and React skills.
+
+[Link to the page](https://todolist-react)
+
+## Technologies Used
+
+- **HTML**: Structuring the content of the web page.
+- **CSS**: Styling the web page using modern techniques.
+- **JavaScript**: Adding interactivity and logic to the web page.
+- **React**: Building a dynamic user interface with components.
+
+### Key Features and Libraries
+
+- **BEM**: Block Element Modifier methodology for writing structured and maintainable CSS.
+- **ES6+ features**: Modern JavaScript features for cleaner and more efficient code.
+- **CSS Grid**: For creating complex and responsive layouts.
+- **Media Queries**: For responsive design to ensure the application looks good on all devices.
+- **Immutability in JavaScript**: Ensuring data is not mutated directly for predictable state management.
+
+### React Features
+
+- **useState**: Hook for managing state within components.
+- **useEffect**: Hook for performing side effects in function components.
+- **Custom Hooks**: Reusable logic across different components.
+- **styled-components**: For writing CSS in JavaScript and styling React components.
+
+### Redux Features
+
+- **Slice**: Creating slices of the Redux state for modular and maintainable code.
+- **Provider**: Making the Redux store available to the entire application.
+- **useSelector**: Selecting state from the Redux store.
+- **useDispatch**: Dispatching actions to the Redux store.
 
 ## demo:
-![demo.img](https://github.com/DorotaKar/todo-list/blob/main/images/img-readme-2.png)
+![demo.img](https://github.com/DorotaKar/todo-list/blob/main/images/img-readme.png)
 
-![demo.img-mobile](https://github.com/DorotaKar/todo-list/blob/main/images/img-readme-mobile-2.png)
+![demo.img-mobile](https://github.com/DorotaKar/todo-list/blob/main/images/img-readme-mobile.png)
 
-![demo.giv](https://github.com/DorotaKar/todo-list/blob/main/images/readme.gif)
+![demo.search](https://github.com/DorotaKar/todo-list/blob/main/images/readme-search.png)
 
 
 

@@ -1,7 +1,7 @@
 # To Do List - React
 
 ## Demo
-[Link to the page](https://todolist-react)
+[Link to the page](https://dor-ka.github.io/todolist-react/)
 
 ## About
 

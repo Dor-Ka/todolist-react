@@ -1,68 +1,42 @@
-# To Do List - React
+# 📝 To Do List - React
 
-## Demo
+## 🔗 Demo
 [Link to the page](https://dor-ka.github.io/frontend-youcode-react-todolist/)
 
-## About
+## 📌 About
 
-This project is a simple website created for practicing basic HTML, CSS, JavaScript, and React skills.
+This project is a simple website created for practicing basic **HTML**, **CSS**, **JavaScript**, and **React** skills.
 
-## Technologies Used
+## 🧰 Technologies Used
 
-- **HTML**: Structuring the content of the web page.
-- **CSS**: Styling the web page using modern techniques.
-- **JavaScript**: Adding interactivity and logic to the web page.
-- **React**: Building a dynamic user interface with components.
+- **HTML** – Markup structure
+- **CSS** – Modern styling techniques
+- **JavaScript** – Interactivity & logic
+- **React** – UI components & state management
 
-### Key Features and Libraries
+## 🚀 Key Features
 
-- **BEM**: Block Element Modifier methodology for writing structured and maintainable CSS.
-- **ES6+ features**: Modern JavaScript features for cleaner and more efficient code.
-- **CSS Grid**: For creating complex and responsive layouts.
-- **Media Queries**: For responsive design to ensure the application looks good on all devices.
-- **Immutability in JavaScript**: Ensuring data is not mutated directly for predictable state management.
+- **BEM** CSS methodology
+- **ES6+ features** (arrow functions, destructuring, etc.)
+- **CSS Grid** for layout
+- **Media Queries** for responsiveness
+- **Immutability** principles in JS
 
-### React Features
+### ⚛️ React & Redux Features
 
-- **useState**: Hook for managing state within components.
-- **useEffect**: Hook for performing side effects in function components.
-- **Custom Hooks**: Reusable logic across different components.
-- **styled-components**: For writing CSS in JavaScript and styling React components.
+- `useState`, `useEffect`, custom hooks
+- `styled-components` for scoped styling
+- **Redux**: store setup with `slice`, `useSelector`, `useDispatch`, and `Provider`
 
-### Redux Features
+## ⚙️ Project Setup
 
-- **Slice**: Creating slices of the Redux state for modular and maintainable code.
-- **Provider**: Making the Redux store available to the entire application.
-- **useSelector**: Selecting state from the Redux store.
-- **useDispatch**: Dispatching actions to the Redux store.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## demo:
-![demo.img](https://github.com/DorotaKar/frontend-youcode-react-todolist/blob/main/public/img-readme.png)
-
-![demo.img-mobile](https://github.com/DorotaKar/frontend-youcode-react-todolist/blob/main/public/img-readme-mobile.png)
-
-![demo.search](https://github.com/DorotaKar/frontend-youcode-react-todolist/blob/main/public/img-readme-search.png)
-
-
-## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### Available Scripts
-
-In the project directory, you can run:
+### 🛠 Available Scripts
 
 #### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode on [http://localhost:3000](http://localhost:3000)
 
 #### `npm run build`
+Builds the app for production to the `build` folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
